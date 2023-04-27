@@ -6,6 +6,13 @@ while true do
     
     local evt, username, message, uuid, hidden = os.pullEvent"chat"
 
-    print(username,message,uuid,hidden)
+    if username == "Chick_Chicky" then
+        
+        local radiation = environment.getRadiationRaw()
+        local transferRate = energy.getTransferRate()
+
+        chatBox.sendFormattedMessage('Radiation: '..tostring(radiation)..'\nEnergy Transfer: '..tostring(transferRate),'NuclearMonitor','[]')
+
+    end
 
 end
