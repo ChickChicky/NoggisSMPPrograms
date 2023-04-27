@@ -6,7 +6,7 @@ while true do
     
     local evt, username, message, uuid, hidden = os.pullEvent"chat"
 
-    if username == "Chick_Chicky" then
+    if username == "Chick_Chicky" and message == "plz reactor status" then
         
         local radiation = environment.getRadiationRaw()
         local transferRate = energy.getTransferRate()
