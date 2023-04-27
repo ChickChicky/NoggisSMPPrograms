@@ -8,10 +8,10 @@ while true do
 
     if username == "Chick_Chicky" and message == "plz reactor status" then
         
-        local radiation = environment.getRadiationRaw()
+        local radiation = environment.getRadiation()
         local transferRate = energy.getTransferRate()
 
-        chatBox.sendMessage('Radiation: '..tostring(radiation)..'\nEnergy Transfer: '..tostring(transferRate),'NuclearMonitor','[]')
+        chatBox.sendMessage('Radiation: §a'..tostring(radiation)..'§r\nEnergy Transfer: §e'..tostring(transferRate)..'§r','NuclearMonitor','[]')
 
     end
 
