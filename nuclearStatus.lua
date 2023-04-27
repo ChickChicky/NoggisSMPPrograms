@@ -11,7 +11,7 @@ while true do
         local radiation = environment.getRadiationRaw()
         local transferRate = energy.getTransferRate()
 
-        chatBox.sendFormattedMessage('Radiation: '..tostring(radiation)..'\nEnergy Transfer: '..tostring(transferRate),'NuclearMonitor','[]')
+        chatBox.sendMessage('Radiation: '..tostring(radiation)..'\nEnergy Transfer: '..tostring(transferRate),'NuclearMonitor','[]')
 
     end
 
